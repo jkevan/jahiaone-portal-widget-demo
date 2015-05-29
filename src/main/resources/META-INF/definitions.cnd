@@ -1,0 +1,10 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jonent = 'http://www.jahia.org/jahia/jahiaone/nt/1.0'>
+
+//---------------------------------------------------------
+// Message widget
+//---------------------------------------------------------
+
+[jonent:messagesWidget] > jnt:content, jmix:portalWidget
+ - channelName (string) = "default" autocreated
