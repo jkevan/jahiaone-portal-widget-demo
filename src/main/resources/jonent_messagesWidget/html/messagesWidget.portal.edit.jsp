@@ -11,8 +11,8 @@
 
 <div ng-app="messagesWidgetApp">
     <div id="messages-widget-${currentNode.identifier}" ng-controller="messages-edit-ctrl"
-         widget-injector="{'widgetId': 'messages-widget-${currentNode.identifier}', 'channel': '${currentNode.properties.channelName.string}'}"
-         widget="widget" channel="channel">
+         widget-injector="{'widgetId': 'messages-widget-${currentNode.identifier}'}"
+         widget="widget">
 
         <h2>Edit message widget:</h2>
 
@@ -24,7 +24,7 @@
 
             <label>
                 <span>Channel :</span>
-                <input type="text" name="channelName" ng-model="channel"/>
+                <input type="text" name="channelName" value="${currentNode.properties.channelName.string}"/>
             </label>
 
             <button ng-click="cancel()">Cancel</button>

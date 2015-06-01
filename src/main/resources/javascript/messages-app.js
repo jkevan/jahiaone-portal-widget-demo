@@ -26,7 +26,7 @@ bookmarksWidget.controller('messages-ctrl', ['$scope', 'messageServices', functi
 
 bookmarksWidget.controller('messages-edit-ctrl', ['$scope', 'messageServices', function ($scope, messageServices) {
     $scope.update = function () {
-        messageServices.updateWidget($scope.widget, $scope.channel);
+        messageServices.updateWidget($scope.widget);
     };
 
     $scope.cancel = function () {
