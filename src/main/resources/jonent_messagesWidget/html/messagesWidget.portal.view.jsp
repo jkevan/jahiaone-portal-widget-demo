@@ -11,8 +11,8 @@
 
 <div ng-app="messagesWidgetApp">
     <div id="messages-widget-${currentNode.identifier}" ng-controller="messages-ctrl"
-         widget-injector="{'widgetId': 'messages-widget-${currentNode.identifier}', 'channel': '${currentNode.properties.channelName.string}'}"
-         widget="widget" channel="channel">
+         widget-injector="{'widgetId': 'messages-widget-${currentNode.identifier}', 'room': '${currentNode.properties.room.string}'}"
+         widget="widget" room="room">
 
         <ul>
             <li ng-repeat="message in messages"><strong>{{message.properties.author.value}}</strong>: {{message.properties.body.value}}</li>

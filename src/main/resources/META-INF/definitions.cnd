@@ -6,4 +6,4 @@
 //---------------------------------------------------------
 
 [jonent:messagesWidget] > jnt:content, jmix:portalWidget
- - channelName (string) = "default" autocreated
+ - room (string) = "default" autocreated

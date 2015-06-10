@@ -14,17 +14,13 @@
          widget-injector="{'widgetId': 'messages-widget-${currentNode.identifier}'}"
          widget="widget">
 
-        <h2>Edit message widget:</h2>
-
         <form>
             <label>
-                <span>Title :</span>
-                <input type="text" name="jcr:title" value="${currentNode.displayableName}">
+                Title: <input type="text" name="jcr:title" value="${currentNode.displayableName}">
             </label>
 
             <label>
-                <span>Channel :</span>
-                <input type="text" name="channelName" value="${currentNode.properties.channelName.string}"/>
+                Room: <input type="text" name="room" value="${currentNode.properties.room.string}"/>
             </label>
 
             <button ng-click="cancel()">Cancel</button>
